@@ -1,0 +1,88 @@
+
+.main-container{
+   height: 100vh;
+   align-items: center;
+   padding: 20px 5%;
+}
+
+.container-title{
+    font-size: 28px;
+    text-align: center;
+    margin: 35px 0px;
+    color: #5ACCCC;
+}
+
+.container-title span{
+    color: #faad00 !important;
+}
+
+.search-book-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-book-input {
+    display: flex;
+    justify-content: center;
+    padding: 12px 50px;
+    border-radius: 16px;
+    border: 1px solid #c0c0c081;
+    font-size: 14px !important;
+    min-width: 50%;
+    background-image: url('https://img.icons8.com/color/search');
+    background-position: 12px center; 
+    background-size: 26px; 
+    background-repeat: no-repeat;
+    position: sticky;
+    top: 0; 
+    z-index: 1000;
+}
+
+.search-book-input:focus {
+    outline: none;
+    border-color: #28b8b8;
+}
+
+.books-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 15px;
+    margin-top: 20px;
+}
+
+.book-card{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-color: #ffff;
+    border-radius: 10px;
+    padding: 10px 10px;
+     height: 250px;
+}
+
+#book-cover{
+    width: 100%;
+    height: 70%;
+}
+
+#book-title{
+   font-size: 14px;
+   font-weight: bold;
+}
+
+#book-author{
+    font-size: 12px;
+    font-weight: 600;
+    color: #a3a3a3;
+ }
+
+@media screen and (max-width: 720px) {
+    .search-book-input {
+       width: 100%;
+    }
+    .search-list-section{
+        width: 100%;
+    }
+}
